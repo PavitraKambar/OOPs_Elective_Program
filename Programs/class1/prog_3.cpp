@@ -1,3 +1,4 @@
+//	Basic output using cout
 #include<iostream>
 using namespace std;
 

@@ -22,13 +22,15 @@ int main()
     return 0;
 }
 // 2.using C++ Style
-
+/*
 int main()
 {
     string alpha="Hello";
     int len;
     len=alpha.length();
     cout<<"The length of the string is "<<len;
+     return 0;
 }
+*/
 
 

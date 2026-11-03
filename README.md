@@ -2,7 +2,7 @@
 
 This repository contains C++ programs developed as part of my Object-Oriented Programming (OOPS) Elective coursework.
 
-The programs progress from basic C++ programming concepts to classes, constructors, static members, friend functions, and inheritance.
+The programs progress from basic C++ programming concepts to classes, constructors, static members, friend functions, inheritance, polymorphism, operator overloading, and exception handling.
 
 ---
 
@@ -24,13 +24,18 @@ The programs progress from basic C++ programming concepts to classes, constructo
 OOPS_Elective_Programs/
 │
 ├── Programs/
-│   ├── Class1/
-│   ├── Class2/
-│   ├── Class3/
-│   ├── Class4/
-│   ├── Class5/
-│   ├── Class6/
-│   └── Class7/
+│   ├── Class_1/
+│   ├── Class_2/
+│   ├── Class_3/
+│   ├── Class_4/
+│   ├── Class_5/
+│   ├── Class_6/
+│   ├── Class_7/
+│   ├── Class_8/
+│   ├── Class_9/
+│   ├── Class_10/
+│   ├── Class_11/
+│   └── Class_12/
 │
 ├── .gitignore
 └── README.md
@@ -126,6 +131,67 @@ Further practice with multi-level inheritance and the `protected` access specifi
 | `prog_2.cpp` | Multi-level inheritance using protected members |
 
 
+### Class 8 – Constructor Initializer Lists and Multiple Inheritance
+
+Programs practising constructor initializer lists and building on inheritance examples.
+
+| Program | Concept |
+|---|---|
+| `prog_1.cpp` | Single-level inheritance using constructor initializer lists to initialize base-class and derived-class members |
+| `prog_2.cpp` | Multi-level inheritance with `Person`, `Student`, and `IT_Student`; constructor-initializer-list practice (incomplete/error in current version) |
+| `prog_3.cpp` | Multiple inheritance using `Student`, `Test`, and `Result`; demonstrates the default-constructor issue when objects are created without arguments |
+| `prog_4.cpp` | `Student`, `Test`, and `Result` example using parameterized constructors and an initializer list |
+| `prog_5.cpp` | Student result system using multiple inheritance; inputs three subject marks and calculates total and percentage |
+| `prog_6.cpp` | Student result system using multiple inheritance; inputs five subject marks and displays total and percentage |
+
+### Class 9 – Multiple Inheritance
+
+Programs demonstrating a class inheriting from more than one base class, including a student-result example.
+
+| Program | Concept |
+|---|---|
+| `prog_1.cpp` | Multiple inheritance using `Liquid`, `Fuel`, and derived class `Petrol` |
+| `prog_2.cpp` | `Student`, `Test`, and `Result` multiple-inheritance example; an intermediate constructor/display practice version |
+
+### Class 10 – Virtual Base Classes and Function Overriding
+
+Programs covering the diamond inheritance problem, virtual base classes, and runtime polymorphism through virtual functions.
+
+| Program | Concept |
+|---|---|
+| `prog_1.cpp` | Diamond-style multiple inheritance where member `i` becomes ambiguous because `D` inherits `A` through both `B` and `C` |
+| `prog_2.cpp` | Resolving repeated-base ambiguity using a virtual base class |
+| `prog_3.cpp` | Function overriding with a virtual `show()` function and base-class pointer; demonstrates runtime polymorphism/late binding |
+| `prog_4.cpp` | Further practice with base and derived `show()` functions, virtual dispatch, and direct object calls |
+
+### Class 11 – Runtime Polymorphism, Abstract Classes, and Operator Overloading
+
+Programs demonstrating virtual functions, abstract classes, and unary/binary operator overloading.
+
+| Program | Concept |
+|---|---|
+| `prog_1.cpp` | `Shape` base class and `Circle` derived class; virtual `draw()` demonstrates runtime polymorphism |
+| `prog_2.cpp` | One base class with three derived classes (`Circle`, `Square`, and `Triangle`) overriding `draw()` |
+| `prog_3.cpp` | Runtime polymorphism using an array of base-class pointers to different derived shape objects |
+| `prog_4.cpp` | Abstract `Vehicle` class with a pure virtual function and derived `Car` and `Bike` classes |
+| `prog_5.cpp` | Binary `+` operator overloading to add two complex numbers |
+| `prog_6.cpp` | Binary `-` operator overloading to subtract two complex numbers |
+| `prog_7.cpp` | Prefix and postfix increment operator overloading (`++`) for a `Counter` class |
+| `prog_8.cpp` | Prefix/postfix-style decrement logic practice; review the operator names in the current source, which still use `operator++` |
+
+### Class 12 – String Operator Overloading and Exception Handling
+
+Programs introducing operator overloading for strings and exception handling using `try`, `throw`, and `catch`.
+
+| Program | Concept |
+|---|---|
+| `prog_1.cpp` | Practice with binary `+` operator overloading for string concatenation; current source contains issues to correct |
+| `prog_2.cpp` | Basic exception handling using `try`, `throw`, and `catch` for a negative integer |
+| `prog_3.cpp` | Throwing and catching an integer when one of two values is zero |
+| `prog_4.cpp` | Exception handling with different thrown data types (`int` and `double`) and matching catch blocks |
+| `prog_5.cpp` | Handling division by zero by throwing and catching a message |
+| `prog_6.cpp` | Modified division-by-zero example exploring the order of division and exception throwing |
+
 ---
 
 ## 🧠 Concepts Covered
@@ -157,6 +223,19 @@ Further practice with multi-level inheritance and the `protected` access specifi
   - `private`
   - `public`
   - `protected`
+- Constructor initializer lists
+- Multiple inheritance
+- Virtual base classes and the diamond problem
+- Function overriding
+- Virtual functions, late binding, and runtime polymorphism
+- Abstract classes and pure virtual functions
+- Operator overloading
+  - Binary `+` and `-`
+  - Prefix and postfix increment/decrement practice
+- Exception handling
+  - `try`, `throw`, and `catch`
+  - Handling different exception types
+  - Division-by-zero examples
 
 ---
 
